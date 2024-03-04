@@ -1,0 +1,65 @@
+.invitation-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.invitation-card p {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.invitation-card button {
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.invitation-card button.accept {
+    background-color: #3e8640;
+    color: white;
+}
+
+.invitation-card button.decline {
+    background-color: #b9231d;
+    color: white;
+}
+
+.invitation-card button:hover {
+    opacity: 0.8;
+}
+
+.back-button {
+    padding: 5px 20px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10%;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.back-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.back-button:active {
+    background-color: #397d3b;
+    transform: scale(0.95);
+}
+

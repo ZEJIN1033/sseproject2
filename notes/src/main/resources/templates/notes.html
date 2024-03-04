@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/notes/static/style.css">
+</head>
+<body>
+<div class="app-container">
+    <div class="sidebar" id="sidebar">
+        <!-- Sidebar header -->
+        <div class="sidebar-header">
+            <button id="addNoteBtn">+</button>
+        </div>
+    </div>
+    <div class="main-content" id="content">Select a note to view its content.</div>
+    <div id="memoApp" th:data-userid="${userId}"></div>
+</div>
+<script src="/notes/static/script.js"></script>
+</body>
+</html>

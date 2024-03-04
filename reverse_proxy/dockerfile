@@ -1,0 +1,17 @@
+# 使用官方 Nginx 镜像作为基础镜像
+FROM nginx:latest
+
+# （可选）设置工作目录
+WORKDIR /etc/nginx
+
+# 删除默认的 Nginx 配置文件
+RUN rm /etc/nginx/conf.d/default.conf
+
+# 将您的 Nginx 配置文件复制到镜像中
+COPY nginx.conf /etc/nginx/nginx.conf
+
+# 暴露容器的 6666 端口
+EXPOSE 3001
+
+# 当容器启动时执行 Nginx
+CMD ["nginx", "-g", "daemon off;"]

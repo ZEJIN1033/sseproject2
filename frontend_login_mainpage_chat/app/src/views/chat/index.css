@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+}
+
+.chart-con .markdown a {
+  color: theme("colors.pink.300");
+}
+
+.chart-con .markdown th {
+  text-align: start;
+  border: 1px solid theme("colors.slate.400");
+  padding: 0.5rem;
+}
+
+.chart-con .markdown table {
+  border: 1px solid theme("colors.slate.400");
+  border-collapse: collapse;
+  border-radius: 2px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.chart-con .markdown table td {
+  border: 1px solid theme("colors.slate.400");
+  padding: 0.5rem;
+}
+
+.chart-con .markdown ul {
+  list-style-type: disc;
+  margin-left: 1rem;
+}
+
+.chart-con .markdown ol {
+  list-style-type: decimal;
+  margin-left: 1rem;
+}

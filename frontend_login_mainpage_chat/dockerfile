@@ -1,0 +1,29 @@
+# Use the official Node.js image as the base image
+FROM node:latest
+
+# Create and define the node_modules's cache directory.
+WORKDIR /app
+
+# Copy the package.json and package-lock.json files from your "app" directory
+COPY app/package*.json ./
+
+# Install project dependencies
+RUN npm install
+
+# Copy the rest of your app's source code from the "app" directory
+COPY app/ ./
+
+# Build the React application
+RUN npm run build
+
+# Install serve to serve the build directory
+RUN npm install -g serve
+
+# Set environment variable
+ENV NODE_ENV production
+
+# Expose the port the app runs on
+EXPOSE 3000
+
+# Serve the app
+CMD ["serve", "-s", "build", "-l", "3000"]
